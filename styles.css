@@ -1,0 +1,44 @@
+body {
+  background-color: #FEFAE0;
+  opacity: 0.8;
+  background-image: radial-gradient(#A6B37D 1.5px, transparent 1.5px), radial-gradient(#A6B37D 1.5px, #FEFAE0 1.5px);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 3px 2px #000000;
+  font-size: 8rem;
+  color: #B99470;
+}
+
+p {
+  font-size: 2rem;
+  color: #000000;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #000000;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
