@@ -12,6 +12,60 @@ body {
   text-align: center;
 }
 
+#rollButton {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Indie Flower', cursive;
+  padding: 15px 30px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 25px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#rollButton:hover {
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset,rgba(44, 187, 99, .25) 0 1px 2px,rgba(44, 187, 99, .25) 0 2px 4px,rgba(44, 187, 99, .25) 0 4px 8px,rgba(44, 187, 99, .25) 0 8px 16px,rgba(44, 187, 99, .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#resetButton {
+  background-color: #8B4513;
+  border-radius: 100px;
+  box-shadow: rgba(139, 69, 19, .2) 0 -25px 18px -14px inset, rgba(139, 69, 19, .15) 0 1px 2px, rgba(139, 69, 19, .15) 0 2px 4px, rgba(139, 69, 19, .15) 0 4px 8px, rgba(139, 69, 19, .15) 0 8px 16px, rgba(139, 69, 19, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Indie Flower', cursive;
+  margin-left: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 25px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#resetButton:hover {
+  box-shadow: rgba(254, 250, 224, .35) 0 -25px 18px -14px inset, rgba(254, 250, 224, .25) 0 1px 2px, rgba(254, 250, 224, .25) 0 2px 4px, rgba(254, 250, 224, .25) 0 4px 8px, rgba(254, 250, 224, .25) 0 8px 16px, rgba(254, 250, 224, .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.button {
+  margin-top: 40px;
+}
+
 .dice {
   text-align: center;
   display: inline-block;

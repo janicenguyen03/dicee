@@ -1,13 +1,13 @@
 const navEntries = performance.getEntriesByType("navigation");
 const navType = navEntries.length > 0 ? navEntries[0].type : "";
 
-if (navType === "reload") {
+function diceRoll(player, score) {
+    document.querySelector(player).setAttribute("src", "./images/dice" + score + ".png");
+}
+
+function rollDice() {
     var dice1 = Math.floor(Math.random() * 6 + 1);
     var dice2 = Math.floor(Math.random() * 6 + 1);
-
-    function diceRoll(player, score) {
-        document.querySelector(player).setAttribute("src", "./images/dice" + score + ".png");
-    }
 
     diceRoll(".img1", dice1);
     diceRoll(".img2", dice2);
@@ -23,3 +23,16 @@ if (navType === "reload") {
 
     document.querySelector("h1").innerHTML = result;
 }
+
+function resetGame() {
+    document.querySelector("h1").innerHTML = "Refresh Me";
+    document.querySelector(".img1").setAttribute("src", "./images/dice1.png");
+    document.querySelector(".img2").setAttribute("src", "./images/dice1.png");
+}
+
+if (navType === "reload") {
+    rollDice();
+}
+
+document.getElementById("rollButton").addEventListener("click", rollDice);
+document.getElementById("resetButton").addEventListener("click", resetGame);
